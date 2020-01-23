@@ -1,8 +1,8 @@
 public abstract class Pet
 {
-    private String name;
-    private int age;
-    private double weight; //in kg
+    protected String name;
+    protected int age;
+    protected double weight; //in kg
 
     public Pet (String name, int age, double weight)
     {
@@ -10,6 +10,8 @@ public abstract class Pet
         this.age = age;
         this.weight = weight;
     }//end constructor
+
+    abstract public String Speak(); // to be overridden in all child classes
 
     public String toString()
     {

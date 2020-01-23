@@ -7,6 +7,11 @@ public class Bunny extends Pet
         this.breed = breed;
     }//end constructor with super
 
+    public String Speak()
+    {
+        return "Purr";
+    }
+
     public String toString()
     {
         String output = super.toString() + "\nBreed: " + breed;
