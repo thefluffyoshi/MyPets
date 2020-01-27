@@ -12,6 +12,8 @@ public class MyPetsDriver
         System.out.println("Mochi says: " + Mochi.Speak());
         System.out.println("Apple says: " + Apple.Speak());
 
+        System.out.println("Rex's weight in pounds is " + Rex.AmericanFreedomUnits() + ". \n");
+
         //Testing Pets
 //        System.out.println(Rex);
 //        System.out.print(Mochi);
