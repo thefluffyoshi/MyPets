@@ -2,9 +2,9 @@ public class Lizard extends Pet
 {
     private String species;
 
-    public Lizard (String name, String species, int age, double weight)
+    public Lizard (String name, boolean hasOwner, String species, int age, double weight, String food)
     {
-        super(name, age, weight);
+        super(name, hasOwner, age, weight, food);
         this.species = species;
     }//end constructor
 
@@ -12,6 +12,11 @@ public class Lizard extends Pet
     {
         return "Hissss";
     }//end Speak
+
+    public int monthlyFeeding()
+    {
+        return 10;
+    }
 
     public String toString()
     {

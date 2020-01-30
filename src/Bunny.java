@@ -1,9 +1,9 @@
 public class Bunny extends Pet
 {
     private String breed;
-    public Bunny (String name, String breed, int age, double weight)
+    public Bunny (String name, boolean hasOwner, String breed, int age, double weight, String food)
     {
-        super(name, age, weight);
+        super(name, hasOwner, age, weight, food);
         this.breed = breed;
     }//end constructor with super
 
@@ -11,6 +11,11 @@ public class Bunny extends Pet
     {
         return "Purr";
     }
+
+    public int monthlyFeeding()
+    {
+        return 15;
+    }//override and determine number of feedings
 
     public String toString()
     {
